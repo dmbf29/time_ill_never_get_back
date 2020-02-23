@@ -70,4 +70,15 @@ configure :build do
   #
   require_relative "./lib/build_cleaner"
   activate :build_cleaner
+  require 'rack/cors'
+
+  use Rack::Cors do
+    allow do
+      origins '*'
+      resource '*',
+        headers: :any,
+        methods: [:get, :options]
+    end
+  end
 end
+

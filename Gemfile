@@ -26,3 +26,5 @@ gem 'font-awesome-sass'
 gem 'sass-globbing'
 ## Middleman sprockets
 gem 'middleman-sprockets'
+
+gem 'rack-cors', :require => 'rack/cors'
