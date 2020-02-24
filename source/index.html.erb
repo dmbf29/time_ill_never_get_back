@@ -1,7 +1,7 @@
 <% response = HTTParty.get('https://www.premierfooty.club/api/v1/nufc') %>
 <% count = response['count'] %>
 
-<div class="welcome text-center padded">
+<div class="welcome text-center padded" style="text-align: center">
   <div class="header">
     <%= image_tag "nufc.png", alt: "NUFC logo" %>
     <h1>Time I'll Never Get Back</h1>
